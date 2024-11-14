@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import NavigationBar from "@/components/layout/NavigationBar";
 
 export const metadata: Metadata = {
   title: "Flowbnb",
@@ -17,6 +17,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+        <NavigationBar />
         {children}
       </body>
     </html>
