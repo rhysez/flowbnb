@@ -1,6 +1,6 @@
 
 export default function Page() {
     return (
-        <h1 className={"font-bold text-cherry_red"}>FlowBnb</h1>
+        <h1 className={"text-cherry_red text-2xl p-2"}>flowbnb</h1>
     )
 }
