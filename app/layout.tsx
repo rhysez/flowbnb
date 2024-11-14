@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavigationBar from "@/components/layout/NavigationBar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import {AppSidebar} from "@/components/layout/SideBar";
 
 export const metadata: Metadata = {
   title: "Flowbnb",
@@ -17,8 +19,13 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <NavigationBar />
-        {children}
+        <SidebarProvider defaultOpen={false}>
+            <AppSidebar />
+            <main className={"w-full"}>
+                <NavigationBar />
+                {children}
+            </main>
+        </SidebarProvider>
       </body>
     </html>
   );

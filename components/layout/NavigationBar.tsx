@@ -1,13 +1,14 @@
 import {Bars3Icon, MagnifyingGlassIcon} from "@heroicons/react/24/solid";
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
+import {SidebarTrigger} from "@/components/ui/sidebar";
 
 export default function NavigationBar() {
     return (
         <main className={"flex items-center justify-between py-4 px-12 border-b-[1px] border-border"}>
             <div className={"flex items-center gap-6"}>
-                <Bars3Icon className={"w-6 h-6 text-foreground cursor-pointer hover:text-cherry_red transition-all opacity-70"} />
-                <h2 id={"logo"} className={"text-cherry_red text-2xl font-light"}>flowbnb</h2>
+                <SidebarTrigger />
+                <h2 id={"logo"} className={"text-cherry_red text-2xl"}>flowbnb</h2>
             </div>
             <div className={"flex items-center gap-2"}>
                 <MagnifyingGlassIcon className={"h-6 w-6 text-foreground opacity-75"} />
