@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import {white} from "next/dist/lib/picocolors";
 
 export default {
   content: [
@@ -11,6 +12,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        chalk_white: "var(--chalk_white)",
+        cherry_red: "var(--cherry_red)",
+        brilliant_red: "var(--brilliant_red)",
       },
     },
   },

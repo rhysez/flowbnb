@@ -3,15 +3,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* https://palettes.shecodes.io/palettes/333 */
+
 :root {
-  --background: #ffffff;
+  --background: #fffdef;
   --foreground: #171717;
+  --chalk_white: #f1f1f1;
+  --cherry_red: #c50000;
+  --brilliant_red: #e70000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #171717;
+    --foreground: #fffdef;
+    --chalk_white: #f1f1f1;
+    --cherry_red: #c50000;
+    --brilliant_red: #e70000;
   }
 }
 
