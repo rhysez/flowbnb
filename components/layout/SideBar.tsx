@@ -1,4 +1,4 @@
-import {HomeIcon, MagnifyingGlassIcon, Cog6ToothIcon, UserIcon, ChevronUpIcon} from "@heroicons/react/24/outline";
+import {HomeIcon, MagnifyingGlassIcon, Cog6ToothIcon, UserIcon, ChevronUpIcon, BriefcaseIcon} from "@heroicons/react/24/outline";
 import {
     Sidebar,
     SidebarContent,
@@ -19,6 +19,11 @@ const items = [
         title: "Search",
         url: "/search",
         icon: MagnifyingGlassIcon,
+    },
+    {
+        title: "Bookings",
+        url: "/bookings",
+        icon: BriefcaseIcon,
     },
     {
         title: "Settings",

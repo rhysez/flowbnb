@@ -12,6 +12,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import PlaceCard from "@/components/custom/micro/PlaceCard";
+import {ArrowTrendingUpIcon} from "@heroicons/react/24/solid";
 
 function LocalCarousel() {
     return (
@@ -46,9 +47,13 @@ function LocalCarousel() {
 export default function HomeMostPopular() {
     return (
         <section className={"space-y-6"}>
-            <h3 className={"lg:text-4xl md:text-2xl text-foreground_muted font-bold"}>Most popular places today...</h3>
+            <div className={"flex items-center gap-2"}>
+                <ArrowTrendingUpIcon className={"text-foreground_muted lg:h-12 lg:w-12 md:w-8 md:h-8 w-6 h-6"} />
+                <h3 className={"lg:text-4xl md:text-2xl text-xl text-foreground_muted font-bold"}>Most popular places
+                    today...</h3>
+            </div>
             <section>
-                <LocalCarousel />
+                <LocalCarousel/>
             </section>
         </section>
     )
