@@ -12,22 +12,22 @@ import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger
 const items = [
     {
         title: "Home",
-        url: "/",
+        url: "/home",
         icon: HomeIcon,
     },
     {
         title: "Search",
-        url: "/search",
+        url: "/home/search",
         icon: MagnifyingGlassIcon,
     },
     {
         title: "Bookings",
-        url: "/bookings",
+        url: "/home/bookings",
         icon: BriefcaseIcon,
     },
     {
         title: "Settings",
-        url: "/settings",
+        url: "/home/settings",
         icon: Cog6ToothIcon,
     },
 ]

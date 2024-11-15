@@ -19,15 +19,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <SidebarProvider defaultOpen={true}>
-            <AppSidebar />
-            <main className={"w-full"}>
-                <NavigationBar />
-                <section className={"p-4"}>
-                    {children}
-                </section>
-            </main>
-        </SidebarProvider>
+      {children}
       </body>
     </html>
   );
