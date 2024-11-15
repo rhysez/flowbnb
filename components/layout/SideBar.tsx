@@ -22,7 +22,7 @@ const items = [
 
 export function AppSidebar() {
     return (
-        <Sidebar variant={"floating"} className={"z-10"}>
+        <Sidebar variant={"sidebar"} className={"z-10"}>
                 <SidebarGroup>
                     <SidebarGroupLabel>Navigation</SidebarGroupLabel>
                     <SidebarGroupContent>
