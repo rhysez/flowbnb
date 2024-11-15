@@ -1,4 +1,9 @@
-import { Card, CardContent } from "@/components/ui/card"
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
 import {
     Carousel,
     CarouselContent,
@@ -6,6 +11,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import PlaceCard from "@/components/custom/micro/PlaceCard";
 
 function LocalCarousel() {
     return (
@@ -16,14 +22,19 @@ function LocalCarousel() {
             className="w-full"
         >
             <CarouselContent>
-                {Array.from({ length: 5 }).map((_, index) => (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                {Array.from({ length: 6 }).map((_, index) => (
+                    <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/4">
                         <div className="p-1">
-                            <Card>
-                                <CardContent className="flex aspect-square items-center justify-center p-6">
-                                    <span className="text-3xl font-semibold">{index + 1}</span>
-                                </CardContent>
-                            </Card>
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger>
+                                        <PlaceCard />
+                                    </TooltipTrigger>
+                                    <TooltipContent className={"bg-foreground_muted"}>
+                                        <p>Drag to see more</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
                         </div>
                     </CarouselItem>
                 ))}
