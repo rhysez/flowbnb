@@ -19,11 +19,13 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <SidebarProvider defaultOpen={false}>
+        <SidebarProvider defaultOpen={true}>
             <AppSidebar />
             <main className={"w-full"}>
                 <NavigationBar />
-                {children}
+                <section className={"p-4"}>
+                    {children}
+                </section>
             </main>
         </SidebarProvider>
       </body>

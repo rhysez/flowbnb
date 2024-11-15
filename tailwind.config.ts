@@ -12,6 +12,7 @@ export default {
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',
+			foreground_muted: 'var(--foreground_muted)',
   			chalk_white: 'var(--chalk_white)',
   			cherry_red: 'var(--cherry_red)',
   			brilliant_red: 'var(--brilliant_red)',

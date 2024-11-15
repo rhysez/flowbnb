@@ -9,7 +9,7 @@ body {
   font-family: "Gabarito", Arial, Helvetica, sans-serif;
 }
 
-#logo {
+#nav-logo, #sidebar-logo {
   font-family: "Gluten", Arial, Helvetica, sans-serif;
 }
 
@@ -17,6 +17,8 @@ body {
   :root {
     --background: #f5f5f5;
     --foreground: #171717;
+
+    --foreground_muted: #52525b;
 
     --chalk_white: #f1f1f1;
     --cherry_red: #9c0800;
@@ -57,6 +59,8 @@ body {
   .dark {
     --background: #171717;
     --foreground: #f5f5f5;
+
+    --foreground_muted: #f5f5f5;
 
     --chalk_white: #f1f1f1;
     --cherry_red: #800600;

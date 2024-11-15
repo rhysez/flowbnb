@@ -1,9 +1,9 @@
-import Image from "next/image";
+import HomeMostPopular from "@/components/custom/home/HomeMostPopular";
 
 export default function Home() {
   return (
     <main>
-
+      <HomeMostPopular />
     </main>
   );
 }
