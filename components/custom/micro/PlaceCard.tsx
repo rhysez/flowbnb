@@ -17,14 +17,16 @@ export default function PlaceCard() {
                 />
             </CardHeader>
             <CardContent className={"mt-4"}>
-                <CardTitle>Rental Place</CardTitle>
-                <CardDescription>This is a description of the place.</CardDescription>
+                <CardTitle className={"text-left"}>Rental Place</CardTitle>
+                <CardDescription className={"text-left"}>This is a description of the place.</CardDescription>
             </CardContent>
             <CardFooter className="flex justify-between">
-                <Button className={"bg-cherry_red text-white hover:bg-brilliant_red"}>View</Button>
-                <Button size={"icon"} variant="ghost">
-                    <HeartIcon className={"text-foreground_muted"} />
-                </Button>
+                <div className={"bg-foreground_muted text-white hover:bg-brilliant_red py-1 px-3 rounded-full transition-all text-sm font-light"}>
+                    View Rental
+                </div>
+                <div className={"w-6 h-6"}>
+                    <HeartIcon className={"text-foreground_muted hover:text-brilliant_red transition-all cursor-pointer"} />
+                </div>
             </CardFooter>
         </Card>
     )
