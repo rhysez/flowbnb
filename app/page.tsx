@@ -1,4 +1,4 @@
-import HomeMostPopular from "@/components/custom/home/HomeMostPopular";
+import MostPopular from "@/components/custom/home/MostPopular";
 
 export default function Home() {
   return (

@@ -4,7 +4,7 @@ import {SidebarTrigger} from "@/components/ui/sidebar";
 
 export default function NavigationBar() {
     return (
-        <main className={"flex items-center justify-between py-4 md:px-12 border-b-[1px] border-border"}>
+        <main className={"flex items-center justify-between py-4 md:px-12 border-b-[1px] border-border bg-sidebar"}>
             <section className={"flex flex-col gap-2 md:flex-row md:items-center md:gap-12"}>
                 <div className={"flex items-center gap-2"}>
                     <SidebarTrigger className={"hover:text-cherry_red h-12"}/>

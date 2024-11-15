@@ -12,7 +12,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import PlaceCard from "@/components/custom/micro/PlaceCard";
-import {ArrowTrendingUpIcon} from "@heroicons/react/24/solid";
+import {TagIcon} from "@heroicons/react/24/solid";
 
 function LocalCarousel() {
     return (
@@ -24,7 +24,7 @@ function LocalCarousel() {
         >
             <CarouselContent>
                 {Array.from({ length: 6 }).map((_, index) => (
-                    <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/5">
                         <div className="p-1">
                             <TooltipProvider>
                                 <Tooltip>
@@ -44,13 +44,12 @@ function LocalCarousel() {
     )
 }
 
-export default function HomeMostPopular() {
+export default function CategoryHighlight() {
     return (
         <section className={"space-y-6"}>
             <div className={"flex items-center gap-2"}>
-                <ArrowTrendingUpIcon className={"text-foreground_muted lg:h-12 lg:w-12 md:w-8 md:h-8 w-6 h-6"} />
-                <h3 className={"lg:text-4xl md:text-2xl text-xl text-foreground_muted font-bold"}>Most popular places
-                    today...</h3>
+                <TagIcon className={"text-foreground_muted lg:h-12 lg:w-12 md:w-8 md:h-8 w-6 h-6"} />
+                <h3 className={"lg:text-4xl md:text-2xl text-xl text-foreground_muted font-bold"}>This week's category highlight</h3>
             </div>
             <section>
                 <LocalCarousel/>
