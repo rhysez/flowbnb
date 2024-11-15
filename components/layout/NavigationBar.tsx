@@ -7,7 +7,7 @@ export default function NavigationBar() {
     return (
         <main className={"flex items-center justify-between py-4 px-12 border-b-[1px] border-border"}>
             <div className={"flex items-center gap-6"}>
-                <SidebarTrigger />
+                <SidebarTrigger className={"hover:text-cherry_red h-12"}/>
                 <h2 id={"logo"} className={"text-cherry_red text-2xl"}>flowbnb</h2>
             </div>
             <div className={"flex items-center gap-2"}>
@@ -15,8 +15,12 @@ export default function NavigationBar() {
                 <Input className={"h-7 rounded-full bg-neutral-200 p-2 transition-all"} />
             </div>
             <div className={"flex items-center gap-2"}>
-                <Button className={"bg-cherry_red hover:bg-brilliant_red h-7 rounded-full"}>Sign up</Button>
-                <Button className={"bg-cherry_red hover:bg-brilliant_red h-7 rounded-full"}>Log in</Button>
+                <Button className={"bg-cherry_red hover:bg-brilliant_red h-7 rounded-full opacity-75"}>
+                    Sign up
+                </Button>
+                <Button className={"bg-cherry_red hover:bg-brilliant_red h-7 rounded-full opacity-75"}>
+                    Log in
+                </Button>
             </div>
         </main>
     )
